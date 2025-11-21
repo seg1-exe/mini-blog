@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un article</title>
+</head>
+<body>
+    <h1>Ajouter un article</h1>
+
+    <form action="inserer.php" method="post">
+        <div>
+            <label for="titre">Titre :</label><br>
+            <input type="text" id="titre" name="titre" maxlength="150" required>
+        </div>
+
+        <div>
+            <label for="texte">Texte :</label><br>
+            <textarea id="texte" name="texte" rows="10" cols="60" required></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enregistrer l'article</button>
+        </div>
+    </form>
+
+    <p>
+        <a href="afficher.php">Voir les articles</a>
+    </p>
+</body>
+</html>
